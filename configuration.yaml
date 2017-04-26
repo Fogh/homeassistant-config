@@ -1,0 +1,58 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: !secret home_name
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret latitude
+  longitude: !secret longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 5
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Copenhagen
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  api_password: !secret http_password
+  trusted_networks:
+    - 10.4.1.0/24
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+history:
+logbook:
+
+# Track the sun
+sun:
+
+# Text to speech
+tts:
+  platform: google
+
+media_player:
+  - platform: samsungtv
+    host: 10.4.1.101
+    port: 8001
+    mac: !secret tv_mac
+
+ios:
+
+notify:
+  - platform: ios
+
+group: !include groups.yaml
+sensor: !include sensor.yaml

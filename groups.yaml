@@ -1,0 +1,14 @@
+  media:
+    name: Media
+    view: yes
+    icon: mdi:play-circle-outline
+    entities:
+      - group.media_player
+
+  Media Players:
+    - media_player.apple_tv
+    - media_player.kkken
+    - media_player.samsung_tv_remote
+    - media_player.sovevrelse
+    - media_player.spisestue
+    - media_player.stue

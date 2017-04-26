@@ -1,0 +1,12 @@
+  - platform: yr
+    monitored_conditions:
+     - symbol
+     - temperature
+  - platform: pi_hole
+    monitored_conditions:
+      - ads_blocked_today
+  - platform: speedtest
+    monitored_conditions:
+      - ping
+      - download
+      - upload
