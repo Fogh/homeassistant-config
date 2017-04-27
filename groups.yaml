@@ -12,3 +12,9 @@
     - media_player.sovevrelse
     - media_player.spisestue
     - media_player.stue
+
+  SystemView:
+    name: System
+    view: yes
+    entities:
+    - group.system

@@ -1,10 +1,24 @@
+  - platform: systemmonitor
+    resources:
+    - type: disk_use_percent
+      arg: /
+    - type: memory_free
+    - type: processor_use
+    - type: network_in
+      arg: eth0
+    - type: network_out
+      arg: eth0
+    - type: last_boot
+
   - platform: yr
     monitored_conditions:
      - symbol
      - temperature
+
   - platform: pi_hole
     monitored_conditions:
       - ads_blocked_today
+
   - platform: speedtest
     monitored_conditions:
       - ping
