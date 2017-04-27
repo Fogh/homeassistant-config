@@ -1,3 +1,10 @@
+  default_view:
+    view: yes
+    entities:
+      - group.all_lights
+      - group.all_switches
+      - climate.living_zone
+
   media:
     name: Media
     view: yes
