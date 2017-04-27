@@ -21,6 +21,9 @@ http:
   api_password: !secret http_password
   trusted_networks:
     - 10.4.1.0/24
+    - 127.0.0.1
+  ip_ban_enabled: True
+  login_attempts_threshold: 3
   # Uncomment this if you are using SSL or running in Docker etc
   # base_url: example.duckdns.org:8123
 
