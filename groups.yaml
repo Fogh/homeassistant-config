@@ -5,6 +5,22 @@
     entities:
       - group.media_players
 
+  SystemView:
+    name: System
+    view: yes
+    entities:
+    - group.system
+
+  System:
+    name: System
+    entities:
+    - sensor.cpu_use
+    - sensor.disk_use_
+    - sensor.ram_free
+    - sensor.received_eth0
+    - sensor.sent_eth0
+    - sensor.last_boot
+
   Media Players:
     - media_player.apple_tv
     - media_player.kkken
@@ -12,9 +28,3 @@
     - media_player.sovevrelse
     - media_player.spisestue
     - media_player.stue
-
-  SystemView:
-    name: System
-    view: yes
-    entities:
-    - group.system
