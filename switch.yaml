@@ -3,6 +3,6 @@
     playstation4:
       command_on: 'ps4-waker'
       command_off: 'ps4-waker standby'
-      command_state: 'telnet playstation4 9295 | grep "Connected" > nul && (echo "true") || (echo "false")'
-      value_template: '{{ value }}'
+      command_state: 'nmap -p 9295 10.4.1.116 | grep -w -Eo "open" '
+      value_template: '{{ value == "open" }}'
       friendly_name: "Playstation 4"
