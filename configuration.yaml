@@ -11,8 +11,9 @@ homeassistant:
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Copenhagen
 
-# Enables the frontend
+# Frontend and iOS app
 frontend:
+ios:
 
 # Enables configuration UI
 config:
@@ -52,11 +53,13 @@ media_player:
     port: 8001
     mac: !secret tv_mac
 
-ios:
+tado:
+  username: !secret tado_username
+  password: !secret tado_password
 
 notify:
   - platform: ios
 
 group: !include groups.yaml
 sensor: !include sensor.yaml
-switch: !include switch.yaml 
+switch: !include switch.yaml
