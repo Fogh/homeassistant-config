@@ -3,7 +3,7 @@
     view: yes
     icon: mdi:play-circle-outline
     entities:
-      - group.media_player
+      - group.media_players
 
   Media Players:
     - media_player.apple_tv
