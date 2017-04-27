@@ -4,6 +4,12 @@
       - group.all_lights
       - group.all_switches
       - climate.living_zone
+      - sun.sun
+      - sensor.yr_symbol
+      - sensor.yr_temperature
+      - sensor.speedtest_download
+      - sensor.speedtest_upload
+      - sensor.pihole_ads_blocked_today
 
   media:
     name: Media
