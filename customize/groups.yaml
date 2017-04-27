@@ -1,0 +1,5 @@
+group.all_lights:
+  hidden: False
+
+group.all_switches:
+  hidden: False

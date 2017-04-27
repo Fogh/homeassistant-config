@@ -10,6 +10,7 @@ homeassistant:
   unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Copenhagen
+  customize: !include_dir_merge_named customize
 
 # Frontend and iOS app
 frontend:
