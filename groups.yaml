@@ -27,6 +27,7 @@
   System:
     name: System
     entities:
+    - script.get_latest_config
     - sensor.cpu_use
     - sensor.disk_use_
     - sensor.ram_free
