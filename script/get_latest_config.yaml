@@ -1,0 +1,8 @@
+alias: "Get Latest Config"
+sequence:
+  - service: shell_command.count_commits
+  - condition: numeric_state
+    entity_id: sensor.new_commits
+    above: 1
+  - service: shell_command.update_config
+  - service: homeassistant.restart
