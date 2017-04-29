@@ -24,3 +24,4 @@
       - ping
       - download
       - upload
+    server_id: 8751
