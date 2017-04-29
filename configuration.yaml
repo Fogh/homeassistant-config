@@ -51,7 +51,7 @@ tts:
 media_player:
   - platform: samsungtv
     host: 10.4.1.101
-    #port: 8001
+    port: 8001
     mac: !secret tv_mac
 
 tado:
