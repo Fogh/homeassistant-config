@@ -64,6 +64,12 @@ notify:
 ifttt:
   key: !secret ifttt_key
 
+panel_iframe:
+  laundry_room:
+    title: 'Laundry Room'
+    icon: mdi:washing-machine
+    url: !secret laundry_url
+
 # Includes
 automation: !include_dir_list automation
 group: !include groups.yaml

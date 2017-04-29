@@ -4,6 +4,7 @@
       - group.all_lights
       - group.all_switches
       - climate.living_zone
+      - panel_iframe.laundry_room
       - sun.sun
       - sensor.yr_symbol
       - sensor.yr_temperature
