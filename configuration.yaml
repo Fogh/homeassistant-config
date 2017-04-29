@@ -39,7 +39,17 @@ discovery:
 conversation:
 
 history:
+  exclude:
+    entities:
+      - sensor.last_boot
+      - sensor.new_commits
+      - script.get_latest_config
+      - sensor.pihole_ads_blocked_today
+
 logbook:
+  exclude:
+    entities:
+      - sensor.pihole_ads_blocked_today
 
 # Track the sun
 sun:
