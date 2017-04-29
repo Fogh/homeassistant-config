@@ -21,6 +21,7 @@
   SystemView:
     name: System
     view: yes
+    icon: mdi:server
     entities:
     - group.system
     - script.get_latest_config
