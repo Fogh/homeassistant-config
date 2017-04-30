@@ -83,7 +83,7 @@ panel_iframe:
 device_tracker:
   - platform: nmap_tracker
     hosts: 10.4.1.100-149
-    track_new_devices: yes
+    track_new_devices: no
     home_interval: 20
     exclude:
       - 10.4.1.140
