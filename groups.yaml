@@ -3,7 +3,7 @@
     icon: mdi:home
     entities:
       - group.all_lights
-      - group.all_switches
+      - group.main_stuff
       - climate.living_zone
       - sun.sun
       - sensor.yr_symbol
@@ -43,6 +43,10 @@
     - media_player.sovevrelse
     - media_player.spisestue
     - media_player.stue
+
+  Main_Stuff:
+    - switch.playstation4
+    - media_player.samsung_tv_remote
 
   TV:
     - media_player.apple_tv
