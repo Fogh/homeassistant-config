@@ -5,3 +5,7 @@ group.all_lights:
 group.all_switches:
   friendly_name: 'Switches'
   hidden: False
+
+group.all_devices:
+  friendly_name: 'Me and you'
+  hidden: False
