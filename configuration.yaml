@@ -80,6 +80,15 @@ panel_iframe:
     icon: mdi:washing-machine
     url: !secret laundry_url
 
+device_tracker:
+  - platform: nmap_tracker
+    hosts: 10.4.1.100-149
+    track_new_devices: yes
+    home_interval: 20
+    exclude:
+      - 10.4.1.140
+      - 10.4.1.102
+
 # Includes
 automation: !include_dir_list automation
 group: !include groups.yaml
