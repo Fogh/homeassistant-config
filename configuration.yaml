@@ -57,6 +57,7 @@ sun:
 # Text to speech
 tts:
   platform: google
+  language: 'da'
 
 media_player:
   - platform: samsungtv
