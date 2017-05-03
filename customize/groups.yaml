@@ -9,3 +9,7 @@ group.all_switches:
 group.all_devices:
   friendly_name: 'Me and you'
   hidden: False
+
+group.all_automations:
+  friendly_name: 'Automations'
+  hidden: False
