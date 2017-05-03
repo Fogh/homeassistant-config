@@ -1,0 +1,8 @@
+alias: 'Tado offline'
+trigger:
+  platform: state
+  entity_id: sensor.living_zone_link
+action:
+  service: notify.notify
+  data:
+    message: 'Tado is offline!'
