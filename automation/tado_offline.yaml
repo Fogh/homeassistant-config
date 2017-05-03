@@ -2,6 +2,10 @@ alias: 'Tado offline'
 trigger:
   platform: state
   entity_id: sensor.living_zone_link
+  from: 'ONLINE'
+  to: 'OFFLINE'
+  for:
+    hours: 1
 action:
   service: notify.notify
   data:
