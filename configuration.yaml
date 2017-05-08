@@ -89,13 +89,17 @@ panel_iframe:
     url: http://pi.hole/
 
 device_tracker:
-  - platform: nmap_tracker
-    hosts: 10.4.1.100-149
-    track_new_devices: no
-    home_interval: 20
-    exclude:
-      - 10.4.1.140
-      - 10.4.1.102
+    - platform: tado
+      username: !secret tado_username
+      password: !secret tado_password
+
+  # - platform: nmap_tracker
+  #   hosts: 10.4.1.100-149
+  #   track_new_devices: no
+  #   home_interval: 20
+  #   exclude:
+  #     - 10.4.1.140
+  #     - 10.4.1.102
 
 # Includes
 automation: !include_dir_list automation
