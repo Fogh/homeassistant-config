@@ -89,7 +89,7 @@ panel_iframe:
   pi_hole:
     title: 'Pi-hole'
     icon: mdi:chart-pie
-    url: http://pi.hole/
+    url: http://pi.hole/admin
 
 device_tracker:
     - platform: tado
