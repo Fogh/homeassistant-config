@@ -72,6 +72,9 @@ tado:
   username: !secret tado_username
   password: !secret tado_password
 
+climate:
+  platform: tado
+
 notify:
   - platform: ios
 
