@@ -50,6 +50,9 @@ logbook:
   exclude:
     entities:
       - sensor.pihole_ads_blocked_today
+      - sensor.time
+      - sensor.date
+      - sensor.since_last_boot
 
 # Track the sun
 sun:
