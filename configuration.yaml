@@ -80,6 +80,10 @@ panel_iframe:
     title: 'Laundry Room'
     icon: mdi:washing-machine
     url: !secret laundry_url
+  pi_hole:
+    title: 'Pi-hole'
+    icon: mdi:chart-pie
+    url: http://pi.hole/
 
 device_tracker:
   - platform: nmap_tracker
