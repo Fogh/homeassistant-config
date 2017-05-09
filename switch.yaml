@@ -8,5 +8,5 @@
       friendly_name: "Playstation 4"
 
 - platform: tplink
-  host: 10.4.1.1XX
-  name: 'Air Purifier'
+  host: 10.4.1.137
+  name: 'Desk lamp'
