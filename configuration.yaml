@@ -68,6 +68,10 @@ media_player:
     port: 8001
     mac: !secret tv_mac
 
+  - platform: apple_tv
+    host: !secret apple_tv_host
+    login_id: !secret apple_tv_login_id
+
 tado:
   username: !secret tado_username
   password: !secret tado_password
