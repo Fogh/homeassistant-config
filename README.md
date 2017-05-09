@@ -3,7 +3,7 @@
 
 [Home Assistant](https://home-assistant.io/) configuration files (YAMLs)
 
-Devices:
+**Devices:**
 - Sonos (PLAY:1, PLAY:5 and PLAYBAR)
 - Apple TV
 - Samsung Smart TV
