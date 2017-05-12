@@ -88,15 +88,15 @@ notify:
 ifttt:
   key: !secret ifttt_key
 
-panel_iframe:
-  laundry_room:
-    title: 'Laundry Room'
-    icon: mdi:washing-machine
-    url: !secret laundry_url
-  pi_hole:
-    title: 'Pi-hole'
-    icon: mdi:chart-pie
-    url: 'http://10.4.1.140/admin/'
+# panel_iframe:
+#   laundry_room:
+#     title: 'Laundry Room'
+#     icon: mdi:washing-machine
+#     url: !secret laundry_url
+#   pi_hole:
+#     title: 'Pi-hole'
+#     icon: mdi:chart-pie
+#     url: 'http://10.4.1.140/admin/'
 
 device_tracker:
     - platform: tado
