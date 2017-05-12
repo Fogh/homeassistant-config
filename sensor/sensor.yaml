@@ -25,3 +25,6 @@
       - download
       - upload
     server_id: 8751
+
+  - platform: cert_expiry
+    host: !secret base_url
