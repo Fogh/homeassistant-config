@@ -21,6 +21,8 @@ config:
 
 http:
   api_password: !secret http_password
+  ssl_certificate: !secret ssl_cert_path
+  ssl_key: !secret ssl_key_path
   trusted_networks:
     - 10.4.1.0/24
     - 127.0.0.1
