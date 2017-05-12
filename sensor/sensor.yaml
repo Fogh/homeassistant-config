@@ -27,4 +27,4 @@
     server_id: 8751
 
   - platform: cert_expiry
-    host: !secret base_url
+    host: !secret cert_expiry_host
