@@ -35,6 +35,7 @@
     entities:
     - group.system
     - script.get_latest_config
+    - sensor.ssl_certificate_expiry
 
   System:
     name: System
