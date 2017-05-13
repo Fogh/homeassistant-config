@@ -1,0 +1,9 @@
+alias: 'SSL certificate warning'
+trigger:
+  platform: numeric_state
+  entity_id: sensor.ssl_certificate_expiry
+  below: 10
+action:
+  service: notify.notify
+  data:
+    message: 'It is time to renew the SSL certificate'
