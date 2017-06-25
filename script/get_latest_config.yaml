@@ -6,6 +6,6 @@ sequence:
     above: 1
   - condition: state
     entity_id: sensor.config_status
-    state: '0'
+    state: 0
   - service: shell_command.update_config
   - service: homeassistant.restart
