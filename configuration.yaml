@@ -48,10 +48,15 @@ conversation:
 history:
   exclude:
     entities:
+      - sensor.time
+      - sensor.date
       - sensor.last_boot
       - sensor.new_commits
       - script.get_latest_config
       - sensor.pihole_ads_blocked_today
+      - sensor.pihole_ads_percentage_blocked_today
+      - sensor.pihole_dns_queries_today
+      - sensor.since_last_boot_templated
 
 logbook:
   exclude:
