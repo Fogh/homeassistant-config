@@ -35,8 +35,6 @@ http:
     - 127.0.0.1
   ip_ban_enabled: True
   login_attempts_threshold: 3
-  # Uncomment this if you are using SSL or running in Docker etc
-  # base_url: example.duckdns.org:8123
 
 # Checks for available updates
 updater:
@@ -50,10 +48,15 @@ conversation:
 history:
   exclude:
     entities:
+      - sensor.time
+      - sensor.date
       - sensor.last_boot
       - sensor.new_commits
       - script.get_latest_config
       - sensor.pihole_ads_blocked_today
+      - sensor.pihole_ads_percentage_blocked_today
+      - sensor.pihole_dns_queries_today
+      - sensor.since_last_boot_templated
 
 logbook:
   exclude:
