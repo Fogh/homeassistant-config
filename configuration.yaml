@@ -22,9 +22,9 @@ zone:
 frontend:
   themes:
     blue:
-      primary-color: #2185D0;
+      primary-color: '#2185D0;'
     teal:
-      primary-color: #008080;
+      primary-color: '#008080;'
 
 ios:
 
