@@ -29,7 +29,7 @@
   - platform: cert_expiry
     host: !secret cert_expiry_host
 
-  - platform: rest
-    name: Config Status
-    resource: https://api.travis-ci.org/repos/Fogh/homeassistant-config.json
-    value_template: '{{ value_json.last_build_status }}'
+  # - platform: rest
+  #   name: Config Status
+  #   resource: https://api.travis-ci.org/repos/Fogh/homeassistant-config.json
+  #   value_template: '{{ value_json.last_build_status }}'
