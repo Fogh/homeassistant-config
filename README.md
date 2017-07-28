@@ -12,5 +12,10 @@
 - TP-Link Wi-Fi Smart Plug
 - Tado Smart Radiator Thermostats
 
+**Software:**
+The Raspberry Pi that runs Home Assistant also runs other software related to my home setup.
+
+- [Homebridge](https://github.com/nfarina/homebridge)
+- [Pi-Hole](https://pi-hole.net/)
 
 If you have any ideas, or questions about my configuration you can find me on Twitter: [@f0gh](https://twitter.com/f0gh)
