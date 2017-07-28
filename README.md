@@ -13,6 +13,7 @@
 - Tado Smart Radiator Thermostats
 
 **Software:**
+
 The Raspberry Pi that runs Home Assistant also runs other software related to my home setup.
 
 - [Homebridge](https://github.com/nfarina/homebridge)
