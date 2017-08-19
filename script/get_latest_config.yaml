@@ -5,7 +5,7 @@ sequence:
     entity_id: sensor.new_commits
     above: 1
   #- condition: state
-    #entity_id: sensor.config_status
-    #state: '0'
+    #entity_id: sensor.config_build_status
+    #state: 'Success'
   - service: shell_command.update_config
   - service: homeassistant.restart
