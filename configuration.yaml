@@ -20,11 +20,7 @@ zone:
 
 # Frontend and iOS app
 frontend:
-  themes:
-    blue:
-      primary-color: '#2185D0;'
-    teal:
-      primary-color: '#008080;'
+  themes: !include_dir_merge_named themes
 
 ios:
 
