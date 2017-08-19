@@ -107,7 +107,8 @@ device_tracker:
       home_id: !secret tado_home_id
 
 # Includes
-automation: !include_dir_list automation
+automation old: !include_dir_list automation
+automation: !include automations.yaml
 group: !include groups.yaml
 switch: !include switch.yaml
 sensor: !include_dir_merge_list sensor
