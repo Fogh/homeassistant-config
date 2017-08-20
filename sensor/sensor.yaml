@@ -33,3 +33,7 @@
     name: Config Build Status
     command: curl -X GET https://api.travis-ci.org/repos/Fogh/homeassistant-config/cc.xml\?branch\=master | grep lastBuildStatus | cut -d'"' -f2
     scan_interval: 60
+
+  - platform: bitcoin
+    display_options:
+      - exchangerate

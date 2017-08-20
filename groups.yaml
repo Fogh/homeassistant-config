@@ -12,6 +12,7 @@
       - sensor.speedtest_download
       - sensor.speedtest_upload
       - sensor.pihole_ads_blocked_today
+      - sensor.bitcoin
 
   media:
     name: Media

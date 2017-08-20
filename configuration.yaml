@@ -59,6 +59,7 @@ history:
       - sensor.pihole_ads_percentage_blocked_today
       - sensor.pihole_dns_queries_today
       - sensor.since_last_boot_templated
+      - sensor.bitcoin
 
 logbook:
   exclude:
@@ -67,6 +68,7 @@ logbook:
       - sensor.time
       - sensor.date
       - sensor.since_last_boot
+      - sensor.bitcoin
 
 # Track the sun
 sun:
