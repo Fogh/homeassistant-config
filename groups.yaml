@@ -35,7 +35,7 @@
     icon: mdi:server
     entities:
     - group.system
-    - script.get_latest_config
+    - script.deploy_config
     - sensor.ssl_certificate_expiry
 
   System:
