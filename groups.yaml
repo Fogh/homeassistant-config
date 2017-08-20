@@ -12,7 +12,7 @@
       - sensor.speedtest_download
       - sensor.speedtest_upload
       - sensor.pihole_ads_blocked_today
-      - sensor.bitcoin
+      - sensor.exchange_rate_1_btc
 
   media:
     name: Media
