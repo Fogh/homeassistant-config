@@ -88,6 +88,7 @@ media_player:
     host: !secret apple_tv_host
     login_id: !secret apple_tv_login_id
     credentials: !secret apple_tv_credentials
+    start_off: true
 
 tado:
   username: !secret tado_username
