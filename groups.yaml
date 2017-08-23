@@ -60,6 +60,7 @@
     - switch.playstation4
     - media_player.samsung_tv_remote
     - switch.desk_lamp
+    - switch.imac
 
   TV:
     - media_player.apple_tv
