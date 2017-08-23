@@ -1,5 +1,0 @@
-- platform: template
-  sensors:
-    new_commits:
-      value_template: >
-        {{ states("sensor.new_commits") }}
