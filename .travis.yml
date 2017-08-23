@@ -9,14 +9,10 @@ script:
   - hass -c . --script check_config
 env:
   global:
-  - secure: "PrmUxvjFIgbOA1atOmDZdVzWHvXLvebeE75MDpf9jA5kq1eHWh2EJ2fOX9TkLbvNdIqoe/CIuIsDvGW6Oo5zaXBPRJMJhETMJVVcWI/onqhgg4KP8KXVLtZg3vebbjE5mrXKo/mpv2cGqAz5AqzX8/WZ3IGnvCuDN1LiAo3n0OF2KVFjvyE7dgG777Kz3QwoX+6mnjc+IyrlY/im09U5bnD9f84o6dD/u38QfefbSOZ/Vhy+9RH/a7ktdlI382jC+1iQjQtX2La+HpvhVKLf+Ch2V6tX7kTQTdTesXjQvvPP5a+TMlp42xis/WyBPJO+lhLrl+j/GnWHxvZmrK5ddZ7rzUmlokvTTvFCnZMxjWE9BiXOmE0j4L8fjrR5jqehbPnmGDBnncnbSVzRwm/lZ72+SIOIVypUKO1tWakaqOz8N1ZR/Rxj8M8u2ZS33PXRdNTelPzWRRris09P1YTlNicm2UaRSUy1SdAVXfg/dazBhN9Ek5siZ2lNgm2PIZg19HC1cfGt1hYoOpTjw7hYZdQRKqPc6QbHBdcLtrrsWg++FgNytWqq5dZNnRx9vpxuSgRaiosNPapf0q3vCooEntKAi5kC3DD+NoHIYAHnaq5wdt9B17Dnb8Isj3M7rN2ejCq4FNOnwW7rKS6neT8S+bDK9/0K7s+vzVlXl3/Yzvw="
-  - secure: "ySzVI8OeWagtGGYX5oCFe5aJxhkrwfDXR+K3OVhCaoIXTiiQWGR8xfHUDfhXPbFXoo8asf3mvNX9uLt3bL5EjMddsnwHIhVYxF1pffQiZAXEuNZZ+w5vWtvPc/h5H/76FX1xFKjWSyBjMxkqnbv2Kyr0vL+JceM0of2HXyU59K0c6zyMiJqb9RFtS1lnW8gupArgmlIzUfTjvkoKlisvPg9OoJuV3rpCBIEDZD9rReYrZOaoX4j3ppFDcyDZp7qwY6Y1ia7Jjb3rv9t9lMBp/pVpbHZ9rM4VG+ybXY+SonD/baRHEIFe1XCJgJS0TTl/UQZ36u3S5gBASVP2cYpYz1biYdlIN+EdyXpb2AIgJ6kGBMF4KSO1zFY3ByWz4hnO3BihHThajXVri7VTB27jjvd3kQ2jguBtoDSkzpiMlK/wtJCQTOtdwUbPq+uqMGT11AlHAWPBsf0oJ5WqepZyo1Y0zf21RO4nd69MGlrlJfgCxlp0aYd3kJVtLktr/8BsC/vIMpKNHDnMpOlCuFMRr7h9fUl+og7ZfqGhuGRurquxktx3jJsS4irJQfwOQwxCnNIbqkcV0NAn5uaQqesW5du+m8EeDCICvcpFpY4iLWpWvvUCNS/jnggO5eY6W89e+nvMLwPKnPWawNt1fwOGpz/C9ILU+ZcVBYKSpmK8r5I="
-
+    secure: "gzNYZeRMVkUAwx+NJHzh++nav6Kpggh0yiPTiIOjcjoGliOkLV+1+76Shxnl69gGMtSQNTJZ92dNgqcs0pxADZiyrfjPQYAYfbZaO13eODCyMixKtFmq5NT+J3GIb0JopMZUJEcN9eG+IgJ7KdDpS/4S/8ihwBf4gF7OtuM4WhOz+m6QFK+jg2c9OG67AXmGCPLPwXV6+180RXQtQHNoHDc5YtWF3VeFgo4GbS5Us4owm7Yb2F3b5ZrhvhSEaiyCx1Li0T+BTVYkv2Y0CLjb4oFR4O6TONSYQlYX+JPpxPBqUsDRrhEoZ+Re+MxPIVQmXLBaa1IkJdZiK3oDgE5FBi97DnkM9pV74GzgVPjoYRUkaDfvdsXSCf1bqsUwtBoLsT3Om23Oby5/AzxaoqP/4eLAcK3DhI89+GkwIXn+Wg01HjQWhf/9TqDRAZdckGEmFr0f0Nf0XCyLa9l2q5FyD9FtNk5q7BaJLDdQGgm2923EgOVbW76olvwNzmIFB+aVQfaXPB74pzsSeIV7qgMsLcuSpLNGgOG71o+lSy3FTdT8aqtcz5zuSz3lxkNTi7JzMlk9tvzYVEtBRbGRGewPBhSczWdHz+UTp//6R+ShUkvOUfAft8/TcLP0C3nuf7GWrdHZpVtkdVaKfcpx2vsu6gk8WEi8CZM+5niVzsTU4+0="
 deploy:
   - provider: script
     script: |
-      curl -v -X POST -H "Content-Type: application/json" -H "x-ha-access: $HA_PASSWORD" "$HA_SERVICE"
+      curl -v -X POST "$HA_SERVICE"
     on:
       branch: master
-#after_success: |
-  #curl -v -X POST -H "Content-Type: application/json" -H "x-ha-access: $HA_PASSWORD" "$HA_SERVICE"
