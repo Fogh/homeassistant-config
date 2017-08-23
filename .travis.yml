@@ -7,12 +7,3 @@ install:
   - pip3 install homeassistant
 script:
   - hass -c . --script check_config
-env:
-  global:
-    secure: "gzNYZeRMVkUAwx+NJHzh++nav6Kpggh0yiPTiIOjcjoGliOkLV+1+76Shxnl69gGMtSQNTJZ92dNgqcs0pxADZiyrfjPQYAYfbZaO13eODCyMixKtFmq5NT+J3GIb0JopMZUJEcN9eG+IgJ7KdDpS/4S/8ihwBf4gF7OtuM4WhOz+m6QFK+jg2c9OG67AXmGCPLPwXV6+180RXQtQHNoHDc5YtWF3VeFgo4GbS5Us4owm7Yb2F3b5ZrhvhSEaiyCx1Li0T+BTVYkv2Y0CLjb4oFR4O6TONSYQlYX+JPpxPBqUsDRrhEoZ+Re+MxPIVQmXLBaa1IkJdZiK3oDgE5FBi97DnkM9pV74GzgVPjoYRUkaDfvdsXSCf1bqsUwtBoLsT3Om23Oby5/AzxaoqP/4eLAcK3DhI89+GkwIXn+Wg01HjQWhf/9TqDRAZdckGEmFr0f0Nf0XCyLa9l2q5FyD9FtNk5q7BaJLDdQGgm2923EgOVbW76olvwNzmIFB+aVQfaXPB74pzsSeIV7qgMsLcuSpLNGgOG71o+lSy3FTdT8aqtcz5zuSz3lxkNTi7JzMlk9tvzYVEtBRbGRGewPBhSczWdHz+UTp//6R+ShUkvOUfAft8/TcLP0C3nuf7GWrdHZpVtkdVaKfcpx2vsu6gk8WEi8CZM+5niVzsTU4+0="
-deploy:
-  - provider: script
-    script: |
-      curl -v -X POST "$HA_SERVICE"
-    on:
-      branch: master
