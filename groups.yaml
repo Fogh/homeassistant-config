@@ -37,7 +37,7 @@
     - group.system
     - script.deploy_config
     - sensor.ssl_certificate_expiry
-    - sensor.version
+    - sensor.current_version
 
   System:
     name: System
