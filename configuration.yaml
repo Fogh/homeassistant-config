@@ -110,8 +110,8 @@ device_tracker:
       home_id: !secret tado_home_id
 
 duckdns:
-  domain: !secret duckdns_token
-  access_token: !secret duckdns_domain
+  domain: !secret duckdns_domain
+  access_token: !secret duckdns_token
 
 # Includes
 automation old: !include_dir_list automation
