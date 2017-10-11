@@ -109,6 +109,10 @@ device_tracker:
       password: !secret tado_password
       home_id: !secret tado_home_id
 
+duckdns:
+  domain: !secret duckdns_token
+  access_token: !secret base_url
+
 # Includes
 automation old: !include_dir_list automation
 automation: !include automations.yaml
