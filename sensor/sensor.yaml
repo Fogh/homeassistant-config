@@ -39,3 +39,5 @@
       - exchangerate
 
   - platform: version
+  
+  - platform: uptime

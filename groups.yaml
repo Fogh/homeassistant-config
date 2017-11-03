@@ -38,6 +38,7 @@
     - script.deploy_config
     - sensor.ssl_certificate_expiry
     - sensor.current_version
+    - sensor.uptime
 
   System:
     name: System
