@@ -29,15 +29,18 @@
   - platform: cert_expiry
     host: !secret base_url
 
-  - platform: command_line
-    name: Config Build Status
-    command: curl -X GET https://api.travis-ci.org/repos/Fogh/homeassistant-config/cc.xml\?branch\=master | grep lastBuildStatus | cut -d'"' -f2
+  - platform: travisci
+    api_key: !secret github_token
     scan_interval: 60
+    monitored_conditions:
+      - state
+    repository:
+      - homeassistant-config
 
   - platform: bitcoin
     display_options:
       - exchangerate
 
   - platform: version
-  
+
   - platform: uptime
