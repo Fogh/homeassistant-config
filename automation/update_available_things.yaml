@@ -1,0 +1,7 @@
+alias: 'Update Available - Create task in Things'
+trigger:
+  platform: state
+  entity_id: updater.updater
+action:
+  service: ifttt.trigger
+  data: {"event":"ha_update_available"}
