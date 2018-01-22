@@ -49,6 +49,7 @@
     - sensor.received_eth0
     - sensor.sent_eth0
     - sensor.last_boot
+    - sensor.foghhomeassistantconfig_state
 
   Sonos:
     - media_player.kkken
