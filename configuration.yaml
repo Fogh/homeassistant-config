@@ -49,6 +49,13 @@ discovery:
 conversation:
 
 history:
+  include:
+    domains:
+      - sensor
+      - switch
+      - media_player
+      - all_lights
+      - binary_sensor
   exclude:
     entities:
       - sensor.time
@@ -59,17 +66,22 @@ history:
       - sensor.pihole_ads_blocked_today
       - sensor.pihole_ads_percentage_blocked_today
       - sensor.pihole_dns_queries_today
+      - sensor.since_last_boot
       - sensor.since_last_boot_templated
       - sensor.exchange_rate_1_btc
+      - sensor.ha_uptime
 
 logbook:
   exclude:
     entities:
       - sensor.pihole_ads_blocked_today
+      - sensor.pihole_ads_percentage_blocked_today
+      - sensor.pihole_dns_queries_today
       - sensor.time
       - sensor.date
       - sensor.since_last_boot
       - sensor.exchange_rate_1_btc
+      - sensor.ha_uptime
 
 # Track the sun
 sun:
