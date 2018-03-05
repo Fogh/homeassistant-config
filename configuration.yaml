@@ -126,6 +126,8 @@ duckdns:
   domain: !secret duckdns_domain
   access_token: !secret duckdns_token
 
+homekit:
+
 # Includes
 automation old: !include_dir_list automation
 automation: !include automations.yaml
