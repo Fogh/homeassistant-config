@@ -103,6 +103,9 @@ media_player:
     credentials: !secret apple_tv_credentials
     start_off: true
 
+hue:
+  allow_hue_groups: false
+
 tado:
   username: !secret tado_username
   password: !secret tado_password
