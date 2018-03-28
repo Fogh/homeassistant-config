@@ -105,7 +105,7 @@ media_player:
 
 hue:
   bridges:
-    allow_hue_groups: false
+    - allow_hue_groups: false
 
 tado:
   username: !secret tado_username
