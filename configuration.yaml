@@ -133,6 +133,10 @@ duckdns:
   access_token: !secret duckdns_token
 
 homekit:
+  filter:
+    include_entities:
+      - light.entre
+      - media_player.samsung_tv_remote
 
 # Includes
 automation old: !include_dir_list automation
