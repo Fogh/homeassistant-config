@@ -105,9 +105,9 @@ media_player:
     credentials: !secret apple_tv_credentials
     start_off: true
 
-hue:
-  bridges:
-    - allow_hue_groups: false
+# hue:
+#   bridges:
+#     - allow_hue_groups: false
 
 tado:
   username: !secret tado_username
