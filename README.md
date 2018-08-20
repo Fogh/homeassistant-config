@@ -7,7 +7,7 @@
 - Apple TV
 - Samsung Smart TV
 - Playstation 4
-- Philips Hue
+- Philips Hue and a few IKEA Trådfri bulbs connected to the Hue bridge
 - TP-Link Wi-Fi Smart Plug
 - Tado Smart Radiator Thermostats
 
