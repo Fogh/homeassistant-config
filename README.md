@@ -10,6 +10,7 @@
 - Philips Hue and a few IKEA Trådfri bulbs connected to the Hue bridge
 - TP-Link Wi-Fi Smart Plug
 - Tado Smart Radiator Thermostats
+- Amazon IoT Buttons connected with [IFTTT](https://ifttt.com)
 
 **Software:**
 
