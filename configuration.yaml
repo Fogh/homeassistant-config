@@ -138,6 +138,10 @@ homekit:
       - light.entre
       - media_player.samsung_tv_remote
 
+recorder:
+  purge_keep_days: 2
+  purge_interval: 1
+
 # Includes
 automation old: !include_dir_list automation
 automation: !include automations.yaml
