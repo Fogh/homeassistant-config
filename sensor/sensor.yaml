@@ -1,5 +1,5 @@
-  - platform: systemmonitor
-    resources:
+- platform: systemmonitor
+  resources:
     - type: disk_use_percent
       arg: /
     - type: memory_free
@@ -10,37 +10,40 @@
       arg: eth0
     - type: last_boot
 
-  - platform: yr
-    monitored_conditions:
-     - symbol
-     - temperature
+- platform: yr
+  monitored_conditions:
+    - symbol
+    - temperature
 
-  - platform: pi_hole
-    monitored_conditions:
-      - ads_blocked_today
+- platform: pi_hole
+  monitored_conditions:
+    - ads_blocked_today
 
-  - platform: speedtest
-    monitored_conditions:
-      - ping
-      - download
-      - upload
-    server_id: 8751
+- platform: speedtest
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+  server_id: 8751
 
-  - platform: cert_expiry
-    host: !secret base_url
+- platform: cert_expiry
+  host: !secret base_url
 
-  - platform: travisci
-    api_key: !secret github_token
-    scan_interval: 60
-    monitored_conditions:
-      - state
-    repository:
-      - homeassistant-config
+- platform: travisci
+  api_key: !secret github_token
+  scan_interval: 60
+  monitored_conditions:
+    - state
+  repository:
+    - homeassistant-config
 
-  - platform: bitcoin
-    display_options:
-      - exchangerate
+- platform: bitcoin
+  display_options:
+    - exchangerate
 
-  - platform: version
+- platform: version
 
-  - platform: uptime
+- platform: uptime
+
+- platform: airvisual
+  api_key: !secret airvisual_key
