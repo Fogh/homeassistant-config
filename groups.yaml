@@ -9,7 +9,7 @@ default_view:
     - sun.sun
     - sensor.yr_symbol
     - sensor.yr_temperature
-    - sensor.airvisual
+    - sensor.us_air_pollution_level
     - sensor.speedtest_download
     - sensor.speedtest_upload
     - sensor.pihole_ads_blocked_today
