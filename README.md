@@ -3,6 +3,7 @@
 [Home Assistant](https://home-assistant.io/) configuration files (YAMLs)
 
 **Devices:**
+
 - Sonos (PLAY:1, One, PLAY:5, PLAYBAR)
 - Apple TV
 - Samsung Smart TV
@@ -12,10 +13,11 @@
 - Tado Smart Radiator Thermostats
 - Amazon IoT Buttons connected to [IFTTT](https://ifttt.com)
 
-**Services** 
+**Services**
 
 - IFTTT
 - Duck DNS
+- AirVisual
 
 **Software:**
 
