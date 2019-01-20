@@ -138,8 +138,8 @@ homekit:
       - media_player.samsung_tv_remote
 
 remote:
-  platform: harmony
-  name: Harmony Hub
+  - platform: harmony
+    name: Harmony Hub
 
 recorder:
   purge_keep_days: 2
