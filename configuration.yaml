@@ -91,7 +91,7 @@ sun:
 # Text to speech
 tts:
   platform: google
-  language: 'da'
+  language: "da"
 
 media_player:
   - platform: samsungtv
@@ -123,10 +123,10 @@ ifttt:
   key: !secret ifttt_key
 
 device_tracker:
-    - platform: tado
-      username: !secret tado_username
-      password: !secret tado_password
-      home_id: !secret tado_home_id
+  - platform: tado
+    username: !secret tado_username
+    password: !secret tado_password
+    home_id: !secret tado_home_id
 
 duckdns:
   domain: !secret duckdns_domain
@@ -137,6 +137,10 @@ homekit:
     include_entities:
       - light.entre
       - media_player.samsung_tv_remote
+
+remote:
+  platform: harmony
+  name: Harmony Hub
 
 recorder:
   purge_keep_days: 2
