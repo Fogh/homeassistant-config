@@ -146,7 +146,6 @@ recorder:
   purge_interval: 1
 
 # Includes
-automation old: !include_dir_list automation
 automation: !include automations.yaml
 group: !include groups.yaml
 switch: !include switch.yaml

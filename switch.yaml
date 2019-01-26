@@ -1,8 +1,8 @@
 - platform: command_line
   switches:
     playstation4:
-      command_on: 'ps4-waker'
-      command_off: 'ps4-waker standby'
+      command_on: "ps4-waker"
+      command_off: "ps4-waker standby"
       command_state: 'nmap -p 9295 10.4.1.116 | grep -w -Eo "open" '
       value_template: '{{ value == "open" }}'
-      friendly_name: "Playstation 4"
+      friendly_name: "PlayStation 4"
