@@ -1,0 +1,86 @@
+views:
+  - badges:
+      - sun.sun
+      - sensor.yr_symbol
+      - sensor.yr_temperature
+      - sensor.us_air_pollution_level
+      - sensor.speedtest_download
+      - sensor.speedtest_upload
+      - sensor.living_zone_temperature
+      - sensor.exchange_rate_1_btc
+    cards:
+      - type: entities
+        title: Me and you
+        show_header_toggle: false
+        entities:
+          - entity: device_tracker.anders_iphone
+          - entity: device_tracker.kathrine_iphone
+      - cards:
+          - entity: light.spisestue
+            name: Spisestue
+            type: light
+          - entity: light.stue
+            name: Stue
+            type: light
+          - entity: light.kokken
+            name: Køkken
+            type: light
+          - entity: light.entre
+            name: Entré
+            type: light
+          - entity: light.sovevaerelse
+            name: Soveværelse
+            type: light
+        type: vertical-stack
+      - cards:
+          - graph: line
+            entity: sensor.bedroom_temperature
+            type: sensor
+          - graph: line
+            entity: sensor.living_zone_temperature
+            type: sensor
+          - graph: line
+            entity: sensor.entre_temperature
+            type: sensor
+          - graph: line
+            entity: sensor.office_temperature
+            type: sensor
+        type: vertical-stack
+    path: default_view
+    title: Home
+  - badges: []
+    icon: "mdi:play-circle-outline"
+    cards:
+      - type: entities
+        title: TV
+        show_header_toggle: false
+        entities:
+          - entity: media_player.samsung_tv_remote
+          - entity: switch.playstation4
+      - entity: media_player.stue
+        type: media-control
+      - entity: media_player.kkken
+        type: media-control
+      - entity: media_player.badevrelse
+        type: media-control
+      - entity: media_player.sovevrelse
+        type: media-control
+      - entity: media_player.spisestue
+        type: media-control
+    path: media
+    title: Media
+  - badges: []
+    icon: "mdi:temperature-celsius"
+    cards:
+      - entity: climate.living_zone
+        theme: Backend-selected
+        type: thermostat
+      - entity: climate.office
+        type: thermostat
+      - entity: climate.bedroom
+        type: thermostat
+      - entity: climate.entre
+        type: thermostat
+    path: temperature
+    title: Heating
+title: Østerbro
