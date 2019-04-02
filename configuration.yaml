@@ -141,6 +141,11 @@ remote:
   - platform: harmony
     name: Harmony Hub
 
+vacuum:
+  - platform: xiaomi_miio
+    host: !secret vacuum_ip
+    token: !secret vacuum_token
+
 recorder:
   purge_keep_days: 2
   purge_interval: 1
