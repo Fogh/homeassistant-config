@@ -36,6 +36,7 @@ http:
   login_attempts_threshold: 3
 
 auth_providers:
+  - type: homeassistant
   - type: trusted_networks
     trusted_networks:
       - 10.4.1.0/24
