@@ -32,11 +32,13 @@ http:
   base_url: !secret base_url
   ssl_certificate: !secret ssl_cert_path
   ssl_key: !secret ssl_key_path
-  trusted_networks:
-    - 10.4.1.0/24
-    - 127.0.0.1
   ip_ban_enabled: True
   login_attempts_threshold: 3
+  auth_providers:
+    - type: trusted_networks
+      trusted_networks:
+        - 10.4.1.0/24
+        - 127.0.0.1
 
 # Checks for available updates
 updater:
