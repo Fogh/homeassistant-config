@@ -19,13 +19,6 @@
   monitored_conditions:
     - ads_blocked_today
 
-- platform: speedtest
-  monitored_conditions:
-    - ping
-    - download
-    - upload
-  server_id: 8751
-
 - platform: cert_expiry
   host: !secret base_url
 

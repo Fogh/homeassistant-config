@@ -152,6 +152,13 @@ recorder:
   purge_keep_days: 2
   purge_interval: 1
 
+speedtestdotnet:
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+  server_id: 8751
+
 # Includes
 automation: !include automations.yaml
 group: !include groups.yaml
