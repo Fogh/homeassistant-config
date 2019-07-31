@@ -16,7 +16,7 @@
 **Services**
 
 - IFTTT
-- Duck DNS
+- DuckDNS (Hass.io plugin)
 - AirVisual
 
 **Software:**
