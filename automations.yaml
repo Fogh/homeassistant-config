@@ -16,16 +16,16 @@
       data:
         message: "You forgot to turn off the TV. It has been automatically turned off"
 
-- id: ssl_warning
-  alias: "SSL certificate warning"
-  trigger:
-    platform: numeric_state
-    entity_id: sensor.ssl_certificate_expiry
-    below: 10
-  action:
-    service: notify.notify
-    data:
-      message: "It is time to renew the SSL certificate"
+# - id: ssl_warning
+#   alias: "SSL certificate warning"
+#   trigger:
+#     platform: numeric_state
+#     entity_id: sensor.ssl_certificate_expiry
+#     below: 10
+#   action:
+#     service: notify.notify
+#     data:
+#       message: "It is time to renew the SSL certificate"
 
 - id: tado_offline
   alias: "Tado offline"
@@ -40,22 +40,3 @@
     service: notify.notify
     data:
       message: "Tado is offline!"
-
-- id: update_availble_things
-  alias: "Update Available - Create task in Things"
-  trigger:
-    platform: state
-    entity_id: updater.updater
-  action:
-    service: ifttt.trigger
-    data: { "event": "ha_update_available" }
-
-- id: update_available_notifications
-  alias: "Update Available Notifications"
-  trigger:
-    platform: state
-    entity_id: updater.updater
-  action:
-    service: notify.notify
-    data:
-      message: "Update for Home Assistant is available."
