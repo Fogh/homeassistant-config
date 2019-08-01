@@ -43,7 +43,7 @@ SystemView:
 System:
   name: System
   entities:
-    - sensor.cpu_use
+    - sensor.processor_use
     - sensor.disk_use_percent
     - sensor.memory_free
     - sensor.network_in_eth0
