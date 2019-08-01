@@ -35,6 +35,8 @@ ios:
 # Enables configuration UI
 config:
 
+system_health:
+
 http:
   base_url: !secret base_url
   ssl_certificate: !secret ssl_cert_path
