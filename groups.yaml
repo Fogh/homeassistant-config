@@ -36,7 +36,6 @@ SystemView:
   icon: mdi:server
   entities:
     - group.system
-    - script.deploy_config
     - sensor.ssl_certificate_expiry
     - sensor.current_version
     - sensor.uptime
@@ -46,24 +45,25 @@ System:
   entities:
     - sensor.cpu_use
     - sensor.disk_use_percent
-    - sensor.ram_free
-    - sensor.received_eth0
-    - sensor.sent_eth0
+    - sensor.memory_free
+    - sensor.network_in_eth0
+    - sensor.network_out_eth0
     - sensor.last_boot
-    - sensor.foghhomeassistantconfig_state
+    - sensor.fogh_homeassistant_config_state
 
 Sonos:
-  - media_player.kkken
-  - media_player.sovevrelse
+  - media_player.kokken
+  - media_player.sovevaerelse
   - media_player.spisestue
   - media_player.stue
+  - media_player.badevaerelse
 
 Main_Stuff:
   name: Main Stuff
   entities:
     - switch.playstation4
     - media_player.samsung_tv_remote
-    - switch.desk_lamp
+    # - switch.desk_lamp
 
 TV:
   - media_player.apple_tv
