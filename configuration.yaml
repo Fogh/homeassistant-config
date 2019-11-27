@@ -159,6 +159,8 @@ speedtestdotnet:
     - upload
   server_id: 8751
 
+pi_hole:
+
 # Includes
 automation: !include automations.yaml
 group: !include groups.yaml

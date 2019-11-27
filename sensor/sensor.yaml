@@ -15,10 +15,6 @@
     - symbol
     - temperature
 
-- platform: pi_hole
-  monitored_conditions:
-    - ads_blocked_today
-
 - platform: cert_expiry
   host: !secret base_url
 
