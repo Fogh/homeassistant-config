@@ -64,6 +64,5 @@ Main_Stuff:
     - switch.playstation4
     - media_player.samsung_tv_remote
     # - switch.desk_lamp
-
-TV:
-  - media_player.apple_tv
+# TV:
+#   - media_player.apple_tv
