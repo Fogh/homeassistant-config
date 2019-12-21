@@ -64,6 +64,7 @@ Main_Stuff:
   entities:
     - switch.playstation4
     - media_player.samsung_tv_remote
+    - vacuum.xiaomi_vacuum_cleaner
     # - switch.desk_lamp
 
 TV:
