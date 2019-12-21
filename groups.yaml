@@ -4,6 +4,7 @@ default_view:
   entities:
     - group.all_devices
     - group.all_lights
+    - group.all_vacuum_cleaners
     - group.main_stuff
     - climate.living_zone
     - sun.sun
