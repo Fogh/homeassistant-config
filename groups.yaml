@@ -13,7 +13,6 @@ default_view:
     - sensor.us_air_pollution_level
     - sensor.speedtest_download
     - sensor.speedtest_upload
-    - sensor.pihole_ads_blocked_today
     - sensor.exchange_rate_1_btc
 
 media:
