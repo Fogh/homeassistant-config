@@ -137,9 +137,9 @@ homekit:
       - light.entre
       - media_player.samsung_tv_remote
 
-remote:
-  - platform: harmony
-    name: Harmony Hub
+# remote:
+#   - platform: harmony
+#     name: Harmony Hub
 
 vacuum:
   - platform: xiaomi_miio
