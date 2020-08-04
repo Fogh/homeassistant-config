@@ -157,6 +157,11 @@ speedtestdotnet:
     - upload
   server_id: 8751
 
+fan:
+  - platform: xiaomi_miio
+    host: !secret fan_ip
+    token: !secret vacuum_token
+
 pi_hole:
 
 # Includes
