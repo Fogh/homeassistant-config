@@ -16,7 +16,6 @@ default_view:
 
 media:
   name: Media
-  view: yes
   icon: mdi:play-circle-outline
   entities:
     - group.sonos
@@ -24,14 +23,12 @@ media:
 
 automation:
   name: Automation
-  view: yes
   icon: mdi:settings
   entities:
     - group.all_automations
 
 SystemView:
   name: System
-  view: yes
   icon: mdi:server
   entities:
     - group.system
