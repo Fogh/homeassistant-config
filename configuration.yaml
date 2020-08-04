@@ -80,9 +80,9 @@ history:
 logbook:
   exclude:
     entities:
-      - sensor.pihole_ads_blocked_today
-      - sensor.pihole_ads_percentage_blocked_today
-      - sensor.pihole_dns_queries_today
+      # - sensor.pihole_ads_blocked_today
+      # - sensor.pihole_ads_percentage_blocked_today
+      # - sensor.pihole_dns_queries_today
       - sensor.time
       - sensor.date
       - sensor.since_last_boot
