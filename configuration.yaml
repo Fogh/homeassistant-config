@@ -69,9 +69,9 @@ history:
       - sensor.last_boot
       - sensor.new_commits
       - script.get_latest_config
-      - sensor.pihole_ads_blocked_today
-      - sensor.pihole_ads_percentage_blocked_today
-      - sensor.pihole_dns_queries_today
+      # - sensor.pihole_ads_blocked_today
+      # - sensor.pihole_ads_percentage_blocked_today
+      # - sensor.pihole_dns_queries_today
       - sensor.since_last_boot
       - sensor.since_last_boot_templated
       - sensor.exchange_rate_1_btc
@@ -161,8 +161,6 @@ fan:
   - platform: xiaomi_miio
     host: !secret fan_ip
     token: !secret vacuum_token
-
-pi_hole:
 
 # Includes
 automation: !include automations.yaml
