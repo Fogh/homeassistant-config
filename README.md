@@ -24,7 +24,8 @@
 Hass.io is installed on a Raspberry Pi 3 Model B.
 
 Hass.io add-ons:
-- [Pi-hole](https://pi-hole.net/)
+- ~~[Pi-hole](https://pi-hole.net/)~~ Deprecated in favor of AdGuard
+- AdGuard
 - DuckDNS
 - Git pull
 - SSH server
